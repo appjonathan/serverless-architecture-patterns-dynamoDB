@@ -17,7 +17,7 @@ resource "aws_dynamodb_table" "example" {
 resource "aws_iam_role" "iam_for_lambda" {
   name = "iam_for_lambda"
 
-assume_role_policy = jsonencode({
+  assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
       {
